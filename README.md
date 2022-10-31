@@ -1,49 +1,27 @@
-# Welcome to [Astro](https://astro.build)
+# Reveal.js + Astro
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
+Minimalist template for presentations on the web.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Usage
 
-![basics](https://user-images.githubusercontent.com/4677417/186188965-73453154-fdec-4d6b-9c34-cb35c248ae5b.png)
+You have several options to start a new presentation using this template:
 
+- Click on the button 'Use this template' above, or
+- Clone the repo : `git clone git@github.com:jsulpis/slides-template.git`, or
+- Use [degit](https://www.npmjs.com/package/degit) (get a copy without cloning): `pnpm dlx degit jsulpis/slides-template my-talk`
 
-## 🚀 Project Structure
+## UI Framework
 
-Inside of your Astro project, you'll see the following folders and files:
+For the specific cases where you need one, you can add one of the [frameworks](https://docs.astro.build/en/guides/integrations-guide/) supported by Astro.
+
+For instance:
 
 ```
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
+pnpm astro add svelte
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+or
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                | Action                                             |
-| :--------------------- | :------------------------------------------------- |
-| `npm install`          | Installs dependencies                              |
-| `npm run dev`          | Starts local dev server at `localhost:3000`        |
-| `npm run build`        | Build your production site to `./dist/`            |
-| `npm run preview`      | Preview your build locally, before deploying       |
-| `npm run astro ...`    | Run CLI commands like `astro add`, `astro preview` |
-| `npm run astro --help` | Get help using the Astro CLI                       |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+```bash
+pnpm astro add react tailwind
+```
