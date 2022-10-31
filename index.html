@@ -7,11 +7,11 @@
     <meta name="generator" content="Astro v1.6.0">
 
     <title>My Awesome Talk Title</title>
-  <link rel="stylesheet" href="/slides-template/assets/index.2c37e9b0.css" /><script type="module" src="/slides-template/hoisted.a8be6e3e.js"></script></head>
+  <link rel="stylesheet" href="/slides-template/assets/index.70cf2195.css" /><script type="module" src="/slides-template/hoisted.53d15e2b.js"></script></head>
 
   <body>
-    <main class="reveal astro-JBZXU2GL">
-    <div class="slides astro-JBZXU2GL">
+    <style>astro-island,astro-slot{display:contents}</style><script>(self.Astro=self.Astro||{}).visible=(s,c,n)=>{const r=async()=>{await(await s())()};let i=new IntersectionObserver(e=>{for(const t of e)if(!!t.isIntersecting){i.disconnect(),r();break}});for(let e=0;e<n.children.length;e++){const t=n.children[e];i.observe(t)}},window.dispatchEvent(new Event("astro:visible"));var l;{const c={0:t=>t,1:t=>JSON.parse(t,o),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(JSON.parse(t,o)),5:t=>new Set(JSON.parse(t,o)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(JSON.parse(t)),9:t=>new Uint16Array(JSON.parse(t)),10:t=>new Uint32Array(JSON.parse(t))},o=(t,s)=>{if(t===""||!Array.isArray(s))return s;const[e,n]=s;return e in c?c[e](n):void 0};customElements.get("astro-island")||customElements.define("astro-island",(l=class extends HTMLElement{constructor(){super(...arguments);this.hydrate=()=>{if(!this.hydrator||this.parentElement&&this.parentElement.closest("astro-island[ssr]"))return;const s=this.querySelectorAll("astro-slot"),e={},n=this.querySelectorAll("template[data-astro-template]");for(const r of n){const i=r.closest(this.tagName);!i||!i.isSameNode(this)||(e[r.getAttribute("data-astro-template")||"default"]=r.innerHTML,r.remove())}for(const r of s){const i=r.closest(this.tagName);!i||!i.isSameNode(this)||(e[r.getAttribute("name")||"default"]=r.innerHTML)}const a=this.hasAttribute("props")?JSON.parse(this.getAttribute("props"),o):{};this.hydrator(this)(this.Component,a,e,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),window.removeEventListener("astro:hydrate",this.hydrate),window.dispatchEvent(new CustomEvent("astro:hydrate"))}}connectedCallback(){!this.hasAttribute("await-children")||this.firstChild?this.childrenConnectedCallback():new MutationObserver((s,e)=>{e.disconnect(),this.childrenConnectedCallback()}).observe(this,{childList:!0})}async childrenConnectedCallback(){window.addEventListener("astro:hydrate",this.hydrate);let s=this.getAttribute("before-hydration-url");s&&await import(s),this.start()}start(){const s=JSON.parse(this.getAttribute("opts")),e=this.getAttribute("client");if(Astro[e]===void 0){window.addEventListener(`astro:${e}`,()=>this.start(),{once:!0});return}Astro[e](async()=>{const n=this.getAttribute("renderer-url"),[a,{default:r}]=await Promise.all([import(this.getAttribute("component-url")),n?import(n):()=>()=>{}]),i=this.getAttribute("component-export")||"default";if(!i.includes("."))this.Component=a[i];else{this.Component=a;for(const d of i.split("."))this.Component=this.Component[d]}return this.hydrator=r,this.hydrate},s,this)}attributeChangedCallback(){this.hydrator&&this.hydrate()}},l.observedAttributes=["props"],l))}</script><main class="reveal astro-C4RMRIUA">
+    <div class="slides astro-C4RMRIUA">
       <section data-auto-animate>
   <h2>Reveal.js + Astro</h2><p>Minimalist template for presentations on the web</p>
 </section>
@@ -28,6 +28,38 @@
     <li class="fragment">Add JS frameworks if and where needed</li>
   </ul>
 </section>
+      <section data-auto-animate>
+  <p>
+    You probably don't need a JS framework like React, Vue or Svelte to make
+    slides.
+  </p><p class="fragment">
+    reveal.js provides plenty of features to make great presentations.
+  </p><p class="fragment">But...</p>
+</section>
+
+<section data-auto-animate>
+  <p>
+    If you want / need to, you can import components made with any <a href="https://docs.astro.build/en/core-concepts/framework-components/">UI framework</a> supported by Astro, and hydrate them only when needed.
+  </p>
+</section>
+
+<section data-auto-animate>
+  <p>Open your devtools, go to the Network tab and reload the page.</p><p class="fragment">
+    The 24kB of javascript you see is nothing more than the <a href="https://bundlephobia.com/package/reveal.js@4.4.0">reveal.js</a> package.
+  </p><p class="fragment">Now keep your devtools open and go to the next slide.</p>
+</section>
+
+<section data-auto-animate>
+  <p>
+    You just downloaded React and Framer Motion to hydrate this interactive
+    component.
+  </p><p>
+    <small>Try to drag & drop to reorder the items.</small>
+  </p><div>
+    <!-- Hydrate this React component (i.e. download and execute its code) only when the slide is visible -->
+    <astro-island uid="1Dy3wo" component-url="/slides-template/List.69d58522.js" component-export="List" renderer-url="/slides-template/client.e5e40db5.js" props="{}" ssr="" client="visible" opts="{&quot;name&quot;:&quot;List&quot;,&quot;value&quot;:true}" await-children=""><ul class="relative !list-none"><li id="🍅 Tomato" class="bg-white text-black relative py-4 px-8 mb-4 rounded text-2xl cursor-grab hover:bg-gray-200 transition-colors" draggable="false" style="box-shadow:0px 0px 0px rgba(0,0,0,0.8);z-index:unset;transform:none;-webkit-touch-callout:none;-webkit-user-select:none;user-select:none;touch-action:pan-x"><span>🍅 Tomato</span></li><li id="🥒 Cucumber" class="bg-white text-black relative py-4 px-8 mb-4 rounded text-2xl cursor-grab hover:bg-gray-200 transition-colors" draggable="false" style="box-shadow:0px 0px 0px rgba(0,0,0,0.8);z-index:unset;transform:none;-webkit-touch-callout:none;-webkit-user-select:none;user-select:none;touch-action:pan-x"><span>🥒 Cucumber</span></li><li id="🧀 Cheese" class="bg-white text-black relative py-4 px-8 mb-4 rounded text-2xl cursor-grab hover:bg-gray-200 transition-colors" draggable="false" style="box-shadow:0px 0px 0px rgba(0,0,0,0.8);z-index:unset;transform:none;-webkit-touch-callout:none;-webkit-user-select:none;user-select:none;touch-action:pan-x"><span>🧀 Cheese</span></li><li id="🥬 Lettuce" class="bg-white text-black relative py-4 px-8 mb-4 rounded text-2xl cursor-grab hover:bg-gray-200 transition-colors" draggable="false" style="box-shadow:0px 0px 0px rgba(0,0,0,0.8);z-index:unset;transform:none;-webkit-touch-callout:none;-webkit-user-select:none;user-select:none;touch-action:pan-x"><span>🥬 Lettuce</span></li></ul></astro-island>
+  </div>
+</section>
       <!-- Put your slides here -->
     </div>
   </main>
@@ -38,4 +70,3 @@
 
 
 
-<!-- Sass is installed by default, you can change if you prefer Stylus or Less -->
