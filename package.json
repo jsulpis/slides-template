@@ -4,17 +4,17 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "astro": "astro",
     "build": "astro build",
+    "deploy": "pnpm build && gh-pages -d dist",
     "dev": "astro dev",
-    "preview": "astro preview",
-    "start": "astro dev"
+    "preview": "astro preview"
   },
   "dependencies": {
     "astro": "1.6.0",
     "reveal.js": "4.4.0"
   },
   "devDependencies": {
+    "gh-pages": "4.0.0",
     "sass": "1.55.0"
   }
 }
