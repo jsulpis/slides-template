@@ -11,6 +11,10 @@
     "start": "astro dev"
   },
   "dependencies": {
-    "astro": "1.6.0"
+    "astro": "1.6.0",
+    "reveal.js": "4.4.0"
+  },
+  "devDependencies": {
+    "sass": "1.55.0"
   }
 }
