@@ -1,0 +1,52 @@
+---
+/**
+ * See the demo branch for example usage
+ */
+
+interface Props {
+	lang: string;
+	lines?: string;
+}
+
+const { lang, lines } = Astro.props;
+---
+
+<span class="code-container">
+	<span class="code-lang" data-id={`code-lang-${lang}`}>{lang}</span>
+	<pre
+		data-id={`code-pre-${lang}`}><code data-id={`code-code-${lang}`} class={`language-${lang}`} data-line-numbers={lines}><slot /></code></pre>
+</span>
+
+<style is:global lang="scss">
+	.code-container {
+		flex: 0;
+		display: inline-block;
+		text-align: left;
+	}
+
+	.code-lang {
+		display: inline-block;
+		font-size: 0.8em;
+		margin-left: 0.5em;
+		margin-bottom: 0.5em;
+		opacity: 0.7;
+	}
+
+	.reveal .code-wrapper {
+		display: flex;
+		width: fit-content;
+		background-color: #272822;
+		border-radius: 0.5em;
+		max-height: 82vh;
+		overflow: auto;
+		line-height: 1.2;
+		position: relative;
+		margin: 0;
+
+		& > code {
+			width: fit-content;
+			overflow: hidden;
+			padding: 2em;
+		}
+	}
+</style>

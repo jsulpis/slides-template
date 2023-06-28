@@ -1,42 +1,40 @@
 ---
-export interface Props {
-  /**
-   * Title of the page
-   */
-  title: string;
-}
-
 const { title } = Astro.props;
 ---
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/slides-template/favicon.svg" />
-    <meta name="generator" content={Astro.generator} />
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/slides-template/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
 
-    <title>{title}</title>
-  </head>
+		<title>{title}</title>
+	</head>
 
-  <body>
-    <slot />
+	<body>
+		<slot />
 
-    <script>
-      import Reveal from "reveal.js";
+		<script>
+			import Reveal from "reveal.js";
+			import RevealHighlight from "reveal.js/plugin/highlight/highlight";
 
-      Reveal.initialize({
-        transition: "none",
-        history: true,
-        autoAnimateDuration: 0.5,
-        autoAnimateEasing: "cubic-bezier(0.4, 0, 0.2, 1)",
-      });
-    </script>
-  </body>
+			Reveal.initialize({
+				transition: "none",
+				history: true,
+				// progress: false,
+				// controls: false,
+				autoAnimateDuration: 0.5,
+				autoAnimateEasing: "cubic-bezier(0.4, 0, 0.2, 1)",
+				// plugins: [RevealHighlight], // use this if you want to show some code
+			});
+		</script>
+	</body>
 </html>
 
 <style is:global>
-  @import "reveal.js/dist/reveal.css";
-  @import "reveal.js/dist/theme/night.css";
+	@import "reveal.js/dist/reveal.css";
+	@import "reveal.js/dist/theme/night.css";
+	@import "../../src/styles/highlightjs-theme-vs2015.css";
 </style>
