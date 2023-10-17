@@ -9,10 +9,10 @@
 		"preview": "astro preview"
 	},
 	"dependencies": {
-		"astro": "1.6.0",
-		"reveal.js": "4.4.0"
+		"astro": "3.3.1",
+		"reveal.js": "4.6.1"
 	},
 	"devDependencies": {
-		"sass": "1.55.0"
+		"sass": "1.69.3"
 	}
 }
