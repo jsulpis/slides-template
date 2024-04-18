@@ -9,14 +9,14 @@
 		"preview": "astro preview"
 	},
 	"dependencies": {
-		"@astrojs/react": "1.2.2",
+		"@astrojs/react": "4.4.2",
 		"@astrojs/tailwind": "6.0.2",
-		"@types/react": "18.3.27",
-		"@types/react-dom": "18.3.7",
+		"@types/react": "19.2.8",
+		"@types/react-dom": "19.2.3",
 		"astro": "7.1.3",
-		"framer-motion": "7.10.3",
-		"react": "18.3.1",
-		"react-dom": "18.3.1",
+		"framer-motion": "12.26.2",
+		"react": "19.0.3",
+		"react-dom": "19.0.3",
 		"reveal.js": "6.0.1",
 		"tailwindcss": "3.4.19"
 	},
