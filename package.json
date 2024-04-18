@@ -9,8 +9,16 @@
 		"preview": "astro preview"
 	},
 	"dependencies": {
+		"@astrojs/react": "1.2.2",
+		"@astrojs/tailwind": "2.1.1",
+		"@types/react": "18.0.21",
+		"@types/react-dom": "18.0.6",
 		"astro": "4.12.3",
-		"reveal.js": "5.1.0"
+		"framer-motion": "7.6.2",
+		"react": "18.0.0",
+		"react-dom": "18.0.0",
+		"reveal.js": "5.1.0",
+		"tailwindcss": "3.0.24"
 	},
 	"devDependencies": {
 		"@types/reveal.js": "5.0.3",
