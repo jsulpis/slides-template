@@ -15,6 +15,9 @@ importers:
         specifier: 5.1.0
         version: 5.1.0
     devDependencies:
+      '@types/reveal.js':
+        specifier: 5.0.3
+        version: 5.0.3
       sass:
         specifier: 1.77.8
         version: 1.77.8
@@ -542,6 +545,9 @@ packages:
 
   '@types/nlcst@2.0.3':
     resolution: {integrity: sha512-vSYNSDe6Ix3q+6Z7ri9lyWqgGhJTmzRjZRqyq15N0Z/1/UnVsno9G/N40NBijoYx2seFDIl0+B2mgAb9mezUCA==}
+
+  '@types/reveal.js@5.0.3':
+    resolution: {integrity: sha512-gwnK8TR38IOBIORWFrV5/z9lRX4iLke2FBqNgRhXxehaWJFkrzVY2TVzfdX/SX94eugt+OI5l++zDBBSfdzruQ==}
 
   '@types/unist@3.0.0':
     resolution: {integrity: sha512-MFETx3tbTjE7Uk6vvnWINA/1iJ7LuMdO4fcq8UfF0pRbj01aGLduVvQcRyswuACJdpnHgg8E3rQLhaRdNEJS0w==}
@@ -2111,6 +2117,8 @@ snapshots:
   '@types/nlcst@2.0.3':
     dependencies:
       '@types/unist': 3.0.0
+
+  '@types/reveal.js@5.0.3': {}
 
   '@types/unist@3.0.0': {}
 
