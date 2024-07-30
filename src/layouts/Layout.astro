@@ -27,14 +27,21 @@ const { title } = Astro.props;
 				// controls: false,
 				autoAnimateDuration: 0.5,
 				autoAnimateEasing: "cubic-bezier(0.4, 0, 0.2, 1)",
-				// plugins: [RevealHighlight], // use this if you want to show some code
+				// plugins: [RevealHighlight], // use this if you want to show some code (be aware that it's really heavy, see https://x.com/jsulpis/status/1795536457819431408)
 			});
 		</script>
 	</body>
 </html>
 
-<style is:global>
+<style is:global lang="scss">
+	// Sass is installed by default, you can change if you prefer Stylus or Less
+
 	@import "reveal.js/dist/reveal.css";
 	@import "reveal.js/dist/theme/night.css";
 	@import "../../src/styles/highlightjs-theme-vs2015.css";
+
+	main,
+	.slide-background-content {
+		background: linear-gradient(#133055, #0c1a2a);
+	}
 </style>
