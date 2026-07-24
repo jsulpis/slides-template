@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: /*.jpg$
+Disallow: /*.jpeg$
+Disallow: /*.png$
+Disallow: /*.gif$
+Disallow: /*.webp$
+Disallow: /*.svg$
+Disallow: /*.avif$
+Disallow: /*.mov$
+Disallow: /*.webm$
